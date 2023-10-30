@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+    font-family: 'Unkempt', cursive;
+}
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+  }
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items:center;
+}
+.container{
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+h1{
+    color: var(--lm-text);
+}
+
+h1.active{
+    color:white;
+    opacity: 0.75;
+}
+
+.darkMode{
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+    font-weight:800;
+    cursor: pointer;
+}
+.darkMode.active{
+    display: flex;
+    color: var(--lm-text);
+}
+.darkMode img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+}
+.lightMode{
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+    font-weight:800;
+    color:white;
+    opacity: 0.75;
+    cursor: pointer;
+}
+.lightMode.active{
+    display: flex;
+}
+.lightMode img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.input-container{
+    position: relative;
+    margin: 0 10px;
+    padding: 5px 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--lm-bg-content);
+}
+.input-container.active{
+    background-color:#1e3053;
+}
+.input-container input{
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+    padding: 0.75rem 0;
+    font-size: 20px;
+    background-image: url(./Assets/search-icon.svg);
+    background-repeat: no-repeat;
+    background-size:20px;
+    background-position:left;
+    background-position-x: 20px;
+    background-position-y: center;
+    padding-left: 20px;
+}
+input.active::placeholder{
+    color: white;
+}
+input.active{
+    color: white;
+}
+
+input::placeholder{
+    padding-left: 30px;
+    letter-spacing: 3px;
+}
+
+input:focus{
+    background: none;
+}
+.btn{
+   all: unset;
+   background-color:var(--btn);
+   font-size: 20px;
+   font-weight: 600;
+   color: white;
+   padding: 10px 30px;
+   margin-right: 0px;
+   border-radius: 5px;
+}
+.btn:hover{
+   background-color:var(--btn-hover);
+   cursor: pointer;
+}
+.userInfo{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content:end;
+    border-radius: 10px;
+    padding: 35px 15px;
+    background-color:white;
+    box-shadow: var(--lm-shadow);
+}
+.noResult{
+    display: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+.noResult.active{
+    display: block;
+}
+.userInfo.active{
+    background-color:#1e3053;
+}
+.userImage{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    left: 35px;
+    top: 15px;
+}
+.userData{
+    width: 73%;
+}
+.userName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userName .name{
+    font-size: 30px;
+    letter-spacing: 0.25rem;
+}
+.joinDate{
+    font-size: 18px;
+    opacity: 0.75;
+    letter-spacing: 0.15rem;
+}
+.email{
+    font-size: 19px;
+}
+
+.bio{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0.75;
+}
+.repo-card{
+    width: fit-content;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(248, 248, 248);
+}
+.repo-card.active{
+    background-color:#141D2F;
+    color: white;
+}
+
+.repo-card .card{
+    font-size: 18px;
+    display: flex;
+    font-weight:800;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 30px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.socialInfo{
+    display: flex;
+    gap: 5px;
+    width: 50%;
+    padding: 10px 5px;
+}
+
+.socialInfo > a {
+    text-decoration: none;
+    opacity: 0.8;
+}

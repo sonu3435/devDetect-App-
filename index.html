@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Sometype+Mono:ital,wght@1,500&family=Unkempt&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+
+            <!-- heade section -->
+            <div class="header">
+
+                <h1>devDetective</h1>
+                <div class="darkMode">
+                    <p>Dark</p>
+                    <img src="./Assets/moon-icon.svg" alt="">
+                </div>
+
+                <div class="lightMode">
+                    <p>Light</p>
+                    <img src="./Assets/sun-icon.svg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Input section -->
+            <form class="input-container">
+                <!-- <img src="./Assets/search-icon.svg" alt="" class="searchFieldImage"> -->
+                <input type="text" inputField placeholder="Enter a GitHub username...">
+                <button class="btn" type="submit">Submit</button>
+            </form>
+
+            <!-- UserInfo section -->
+            <div class="userInfo info">
+
+                <img src="" alt="" class="userImage">
+
+                <div class="userData">    
+                    <div class="userName">
+                        <h2 class="name"></h2>
+                        <p class="joinDate"></p>
+                    </div>
+
+                    <a href="" class="email"></a>
+
+                    <p class="bio"></p>
+
+                    <div class="repo-card">
+                        <div class="repo card">
+                            <p>Repos</p>
+                            <p class="repository"></p>
+                        </div>
+
+                        <div class="follower card">
+                            <p>Followers</p>
+                            <p class="followers"></p>
+                        </div>
+
+                        <div class="following card">
+                            <p>Following</p>
+                            <p class="followings"></p>
+                        </div>
+
+                    </div>
+
+                        <div class="grid">
+
+                            <div class="socialInfo loc">
+                                <img src="./Assets/location-icon.svg" alt="">
+                                <p href=""></p>
+                            </div>
+                            <div class="socialInfo link">
+                                <img src="./Assets/website-icon.svg" alt="">
+                                <a href=""></a>
+                            </div>
+                            <div class="socialInfo twitter">
+                                <img src="./Assets/twitter-icon.svg" alt="">
+                                <a href=""></a>
+                            </div>
+                            <div class="socialInfo company">
+                                <img src="./Assets/company-icon.svg" alt="">
+                                <a href=""></a>
+                            </div>
+
+                        </div>
+
+                </div>
+            </div>
+            <!-- No result Found -->
+            <p class="noResult">No Result Found</p>
+
+
+
+        </div>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
