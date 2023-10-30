@@ -34,6 +34,9 @@ const months = ['Jan','Feb','March','Apr','May','June','July','August','Sep','Oc
 let currenMode = lightMode;
 darkModeField.classList.add("active")
 
+// initially the infor container invisible
+userInfo.style.display = 'none';
+
 lightMode.addEventListener("click",()=>{
     if(currenMode != lightColor){
         currenMode = lightColor;
@@ -81,7 +84,6 @@ button.addEventListener("click", (event) => {
     }
 })
 
-callAPI("sonu3435")
 async function callAPI (user){
    try{
     let response = await fetch(API + user);
